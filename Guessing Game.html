@@ -2,19 +2,38 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
+  <script type = "text/javascript" src = "guessingGame.js"></script>
+
+
   </head>
+
   <body>
   <h1>Guessing Game</h1>
   <div class="content-section">
    <form>
+   <center>
         <label for="GuessNumber">The number you guessed</label>
-        <input type="text" id="GuessNumber">
-        
-      <button type="button">Try it again!</button>
+        <input type="text" id="userNumber">
+       
+      <button id = "tryAgain" type="button">Try it again!</button>
    
+       <p>
+        <input type ="button" id="submit-button" onclick = "fetchNumber();"> Submit your guesses</button>
 
-        <input type="submit" value="Submit your guess">
+      <p>
+        <button id="hint-button" class = "hint-button">Hint</button>
+        </p>
+          <p><output for = "showResult" id="resultStatus" value = "">Output Value</output></p>
 
+      </p>
+           </center>
       </form>
-	  </div>
+
   
+
+        </div>
+        </body>
+        </html>
+        
